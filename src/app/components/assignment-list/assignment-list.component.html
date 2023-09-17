@@ -1,0 +1,26 @@
+<div class = "container">
+<h2>My Assignments</h2>
+<table align="center" class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Course ID</th>
+            <th>Deadline</th>
+            <th>Completed Date</th>
+            <th> Grade </th>
+            <th> Assignment Link </th>
+            <th> Remark </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf = "assignments" >
+            <td> {{ assignments.cid }} </td>
+            <td> {{ assignments.deadline }} </td>
+            <td> {{ assignments.compDate }} </td>
+            <td> {{ assignments.grade }} </td>
+            <td> {{ assignments.alink }} </td>
+            <td> {{ assignments.remark }}</td>
+            <td><button (Click)="SumbitAsnmt(assignments.cid)" class="btn btn-info">Submit Assignment</button></td>
+        </tr>
+    </tbody>
+</table></div>

@@ -1,0 +1,33 @@
+<div class="col-md-6 offset-md-3">
+<div class = "container">
+<h2>Profile</h2>
+<div class="card" style="width: 18rem;" *ngFor = "let studen of student">
+    <div class="card-header">
+      My Profile
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Student ID : {{ studen.sid }}</li>
+      <li class="list-group-item">Name : {{ studen.name }}</li>
+      <li class="list-group-item">Email : {{ studen.email }}</li>
+    </ul>
+  </div></div>
+  <!--
+<table align="center" class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th> Name </th>
+            <th> Email Id</th>
+            <th> Password </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf = "student" >
+            <td> {{ student.sid }} </td>
+            <td> {{ student.name }} </td>
+            <td> {{ student.email }} </td>
+            <td> {{ student.pass }} </td>
+            
+        </tr>
+    </tbody>
+</table></div>-->

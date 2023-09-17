@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3">
+    <div class = "container">
+        <h2>Exam Results</h2>
+        <table align="center" class = "table table-striped">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Course ID </th>
+                    <th>Total Marks</th>
+                    <th>Obtained Marks </th>
+                    <th>Percentage </th>
+                    <th>Result </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let exam of exams" >
+                    <td> {{ exam.sid }} </td>
+                    <td> {{ exam.cid }} </td>
+                    <td> {{ exam.tmarks }} </td>
+                    <td> {{ exam.marks }} </td>
+                    <td> {{ exam.percent }} </td>
+                    <td> {{ exam.result }} </td>
+
+                </tr>
+            </tbody>
+        </table></div>
+        

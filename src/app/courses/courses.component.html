@@ -1,0 +1,20 @@
+
+<div class="container">
+  <h2>Courses</h2>
+    <div class="row">
+        <div class="col-md-3" *ngFor = "let course of courses" >
+            <div class="card shadow-lg">
+<div class="card" style="width: 18rem;" >
+    <div class="card-body" >
+      <h5 class="card-title">Course ID : {{ course.cid }}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Name: {{ course.name }}</li>
+      <li class="list-group-item">Duration: {{ course.duration }}</li>
+      <li class="list-group-item">Marks: {{ course.totalMarks }}</li>
+    </ul>
+    <div class="card-body">
+      <a href="https://www.youtube.com/" class="card-link">Classroom</a>
+    </div>
+  </div></div></div></div></div><br/>
+  

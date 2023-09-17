@@ -1,0 +1,46 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Submit Assignment </h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> Student ID </label>
+            <input type="text" class ="form-control" id = "sid"
+                [(ngModel)] = "assignments.sid" name = "SId">
+        </div>
+    
+        <div class="form-group">
+            <label> Course ID </label>
+            <input type="text" class ="form-control" id = "cid"
+                [(ngModel)] = "assignments.cid" name = "cid">
+        </div>
+    
+        <div class="form-group">
+            <label> Deadline</label>
+            <input type="text" class ="form-control" id = "deadline"
+                [(ngModel)] ="assignments.deadline" name = "deadline">
+        </div>
+    
+        <div class="form-group">
+            <label> Completed Date</label>
+            <input type="text" class ="form-control" id = "compDate"
+                [(ngModel)] = "assignments.compDate" name = "compDate">
+        </div>
+        <div class="form-group">
+            <label> Grade </label>
+            <input type="text" class ="form-control" id = "grade"
+                [(ngModel)] = "assignments.grade" name = "grade">
+        </div>
+        <div class="form-group">
+            <label> Assignment Link</label>
+            <input type="text" class ="form-control" id = "alink"
+                [(ngModel)] = "assignments.alink" name = "Alink">
+        </div>
+        <div class="form-group">
+            <label> Remark</label>
+            <input type="text" class ="form-control" id = "remark"
+                [(ngModel)] = "assignments.remark" name = "remark">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

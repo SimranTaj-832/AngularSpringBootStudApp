@@ -1,0 +1,21 @@
+<div class = "container">
+<h2>My Attendance</h2>
+<table align="center" class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Course ID </th>
+            <th>Total Classes</th>
+            <th> Present </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf = "assignments" >
+            <td> {{ assignments.sid }} </td>
+            <td> {{ assignments.cid }} </td>
+            <td> {{ assignments.tcls }} </td>
+            <td> {{ assignments.present }} </td>
+            
+        </tr>
+    </tbody>
+</table></div>
